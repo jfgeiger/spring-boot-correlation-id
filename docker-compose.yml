@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  service-1:
+    image: localhost:5000/service-1
+    ports:
+      - "18080:18080"
+    expose:
+      - 18080
+  service-2:
+    image: localhost:5000/service-2
+    ports:
+      - "19080:19080"
+    expose:
+      - 19080
+    depends_on:
+      - service-1
+    links:
+      - service-1:service-1

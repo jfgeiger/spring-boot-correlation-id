@@ -1,0 +1,10 @@
+.idea
+
+filter/filter.iml
+filter/target
+
+service-1/service-1.iml
+service-1/target
+
+service-2/service-2.iml
+service-2/target
